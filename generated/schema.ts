@@ -480,4 +480,21 @@ export class Transfer extends Entity {
   set transactionHash(value: Bytes) {
     this.set("transactionHash", Value.fromBytes(value));
   }
+
+  get interacted_with(): Bytes | null {
+    let value = this.get("interacted_with");
+    if (!value || value.kind == ValueKind.NULL) {
+      return null;
+    } else {
+      return value.toBytes();
+    }
+  }
+
+  set interacted_with(value: Bytes | null) {
+    if (!value) {
+      this.unset("interacted_with");
+    } else {
+      this.set("interacted_with", Value.fromBytes(<Bytes>value));
+    }
+  }
 }

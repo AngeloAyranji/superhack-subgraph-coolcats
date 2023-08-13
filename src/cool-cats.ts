@@ -68,6 +68,8 @@ export function handleTransfer(event: TransferEvent): void {
   entity.blockNumber = event.block.number
   entity.blockTimestamp = event.block.timestamp
   entity.transactionHash = event.transaction.hash
+  
+  entity.interacted_with = event.transaction.to
 
   entity.save()
 }

@@ -8,7 +8,8 @@
     "create-local": "graph create --node http://localhost:8020/ coolcats-superhack",
     "remove-local": "graph remove --node http://localhost:8020/ coolcats-superhack",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 coolcats-superhack",
-    "test": "graph test"
+    "test": "graph test",
+    "auth": "graph auth --studio a721fad77879cda2915e547d749309bf"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "0.54.0",
