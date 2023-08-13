@@ -1,0 +1,8 @@
+{
+  "mainnet": {
+    "CoolCats": {
+      "address": "0x1A92f7381B9F03921564a437210bB9396471050C",
+      "startBlock": 12500000
+    }
+  }
+}
